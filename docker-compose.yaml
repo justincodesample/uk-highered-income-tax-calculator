@@ -1,0 +1,33 @@
+version: '3.9'
+
+networks:
+  phpdemo:
+
+services:
+  nginx:
+    container_name: income-tax-nginx
+    image: nginx:1.23.0-alpine
+    depends_on:
+      - php
+      # - mysql
+    networks:
+      - phpdemo
+    ports:
+      - "8080:80"
+    tty: true
+    volumes:
+      - ./src:/var/www/html
+      - ./nginx/log:/var/log/nginx
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: income-tax-php
+    networks:
+      - phpdemo
+    ports:
+      - "9000:9000"
+    tty: true
+    volumes:
+      - ./src:/var/www/html
