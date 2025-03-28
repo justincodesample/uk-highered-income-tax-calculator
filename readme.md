@@ -4,9 +4,19 @@ The Income Tax Calculator is a tool that simplifies the process of calculating t
 
 This Income Tax Calculator comes pre-populated with paygrade data for "academics and support staff in the UK." 
 
-The user-interface is built using of Bootstrap5, a King's theme, and JavaScript, providing an interactive and user-friendly experience. The backend is built with object-oriented PHP, ensuring efficient and secure processing of calculations.
+The user-interface is built using of Bootstrap5, a King's theme, and JavaScript. The backend is built with object-oriented PHP.
 
-The frontend of the Income Tax Calculator is divided into two parts. The first part is a calculator that calculates the amount "onchange" as the user inputs their salary information. This allows for real-time updates and an easy to understand representation of the calculations. The second part of the frontend obtains the results from the PHP backend.
+The frontend of the Income Tax Calculator is divided into two parts. The first part is a calculator that calculates the amount "onchange" as the user inputs their salary information. This allows for real-time updates and an easy to understand representation of the calculations.
+
+The second part of the frontend obtains the results from the PHP backend.
+
+# Screenshot
+Example of Demo Part One
+
+<img src="https://raw.githubusercontent.com/justincodesample/uk-highered-income-tax-calculator/refs/heads/main/screenshot/frontend0.png" width=70% height=70%>
+<br>
+Example of Demo Part Two
+<img src="https://raw.githubusercontent.com/justincodesample/uk-highered-income-tax-calculator/refs/heads/main/screenshot/frontend1.png" width=70% height=70%>
 
 # Execution
 To start, 
